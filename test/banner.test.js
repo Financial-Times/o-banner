@@ -130,7 +130,7 @@ describe('Banner', () => {
 
 		});
 
-		describe('when `options.bannerClass` is specified but no other clases are', () => {
+		describe('when `options.bannerClass` is specified but no other classes are', () => {
 
 			beforeEach(() => {
 
