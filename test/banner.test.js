@@ -33,6 +33,7 @@ describe('Banner', () => {
 
 		beforeEach(() => {
 			testArea.innerHTML = mainFixture;
+			Banner._bannerInstances = [];
 
 			// Stub out methods called in constructor
 			bannerGetOptionsFromDomStub = sinon.stub(Banner, 'getOptionsFromDom');
@@ -105,6 +106,7 @@ describe('Banner', () => {
 		describe('when `options.autoOpen` is `false`', () => {
 
 			beforeEach(() => {
+				Banner._bannerInstances = [];
 
 				// Stub out methods called in constructor
 				bannerRenderStub = sinon.stub(Banner.prototype, 'render');

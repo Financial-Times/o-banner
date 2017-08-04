@@ -46,6 +46,10 @@ class Banner {
 		// Render the banner
 		this.render();
 
+		// There can be only one
+		Banner._bannerInstances.forEach(banner => banner.close());
+		Banner._bannerInstances = [this];
+
 		if (this.options.autoOpen) {
 			this.open();
 		} else {
@@ -211,6 +215,8 @@ class Banner {
 	}
 
 }
+
+Banner._bannerInstances = [];
 
 // Exports
 export default Banner;
