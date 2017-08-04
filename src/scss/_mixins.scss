@@ -2,5 +2,7 @@
 @mixin _oBannerGetThemeMixin($theme, $class) {
 	@if $theme == 'small' {
 		@include oBannerThemeSmall($class);
+	} @else if $theme == 'bright' {
+		@include oBannerThemeBright($class);
 	}
 }

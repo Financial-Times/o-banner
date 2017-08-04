@@ -440,7 +440,7 @@ describe('Banner', () => {
 
 			});
 
-			describe('when `options.theme` is defined', () => {
+			describe('when `options.theme` is defined and is a string', () => {
 
 				beforeEach(() => {
 					banner.options.theme = 'mock-theme';
@@ -450,6 +450,43 @@ describe('Banner', () => {
 				it('adds the theme class to the banner element', () => {
 					assert.strictEqual(returnValue.outerHTML.replace(/[\t\n]+/g, ''), `
 						<div class="mockBannerClass mockBannerClass--mock-theme" data-o-component="o-banner">
+							<div class="mockOuterClass">
+								<div class="mockInnerClass" data-o-banner-inner="">
+									<div class="mockContentClass mockContentLongClass">
+										mockContentLong
+									</div>
+									<div class="mockContentClass mockContentShortClass">
+										mockContentShort
+									</div>
+									<div class="mockActionsClass">
+										<div class="mockActionClass">
+											<a href="mockButtonUrl" class="mockButtonClass">mockButtonLabel</a>
+										</div>
+										<div class="mockActionClass mockActionSecondaryClass">
+											<a href="mockLinkUrl" class="mockLinkClass">mockLinkLabel</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					`.replace(/[\t\n]+/g, ''));
+				});
+
+			});
+
+			describe('when `options.theme` is defined and is an array', () => {
+
+				beforeEach(() => {
+					banner.options.theme = [
+						'mock-theme',
+						'test-theme'
+					];
+					returnValue = banner.buildBannerElement();
+				});
+
+				it('adds all of the theme classes to the banner element', () => {
+					assert.strictEqual(returnValue.outerHTML.replace(/[\t\n]+/g, ''), `
+						<div class="mockBannerClass mockBannerClass--mock-theme mockBannerClass--test-theme" data-o-component="o-banner">
 							<div class="mockOuterClass">
 								<div class="mockInnerClass" data-o-banner-inner="">
 									<div class="mockContentClass mockContentLongClass">

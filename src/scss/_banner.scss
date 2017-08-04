@@ -82,7 +82,7 @@
 
 @mixin oBannerButton {
 	@include oButtons($size: big);
-	@include oButtonsCustomTheme('teal-60', 'white', primary);
+	@include oButtonsCustomTheme(oColorsGetUseCase(o-banner-button, background), oColorsGetUseCase(o-banner-button, text), primary);
 	white-space: nowrap;
 }
 

@@ -28,6 +28,11 @@
 			"description": "Small banner theme"
 		},
 		{
+			"name": "small-bright",
+			"template": "demos/src/small-bright.mustache",
+			"description": "Small and bright banner themes"
+		},
+		{
 			"name": "imperative",
 			"template": "demos/src/imperative.mustache",
 			"description": "Imperative banner",

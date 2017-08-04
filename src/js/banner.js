@@ -98,9 +98,13 @@ class Banner {
 	buildBannerElement () {
 		const bannerElement = document.createElement('div');
 		bannerElement.classList.add(this.options.bannerClass);
+		let themes = [];
 		if (this.options.theme) {
-			bannerElement.classList.add(`${this.options.bannerClass}--${this.options.theme}`);
+			themes = (Array.isArray(this.options.theme) ? this.options.theme : [this.options.theme]);
 		}
+		themes.forEach(theme => {
+			bannerElement.classList.add(`${this.options.bannerClass}--${theme}`);
+		});
 		bannerElement.setAttribute('data-o-component', 'o-banner');
 		let contentHtml;
 		if (this.options.contentShort) {

@@ -1,5 +1,15 @@
 
 @include oColorsSetUseCase(o-banner, background, 'teal');
 @include oColorsSetUseCase(o-banner, text, 'white');
+@include oColorsSetUseCase(o-banner-button, background, 'teal-60');
+@include oColorsSetUseCase(o-banner-button, text, 'white');
 @include oColorsSetUseCase(o-banner-link, text, 'white');
 @include oColorsSetUseCase(o-banner-close, text, 'white');
+
+@include oColorsSetUseCase(o-banner-bright, background, 'teal-90');
+@include oColorsSetUseCase(o-banner-bright, text, 'oxford-40');
+@include oColorsSetUseCase(o-banner-bright-button, background, 'teal-90');
+@include oColorsSetUseCase(o-banner-bright-button, text, 'oxford-40');
+@include oColorsSetUseCase(o-banner-bright-button-active, text, 'white');
+@include oColorsSetUseCase(o-banner-bright-link, text, 'oxford-40');
+@include oColorsSetUseCase(o-banner-bright-close, text, 'oxford-40');
