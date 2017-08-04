@@ -36,6 +36,14 @@
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+
+	small {
+		display: block;
+		@include oTypographySans($scale: (default: 1));
+	}
+	> small:last-child {
+		margin-top: $_o-banner-spacing / 2;
+	}
 }
 
 @mixin oBannerContentLong {
