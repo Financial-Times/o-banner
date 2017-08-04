@@ -35,7 +35,7 @@ class Banner {
 			contentShort: null,
 			buttonLabel: 'OK',
 			buttonUrl: '#',
-			linkLabel: 'More info',
+			linkLabel: null,
 			linkUrl: '#',
 			closeButtonLabel: 'Close',
 
@@ -119,6 +119,14 @@ class Banner {
 				</div>
 			`;
 		}
+		let secondaryActionHtml = '';
+		if (this.options.linkLabel) {
+			secondaryActionHtml = `
+				<div class="${this.options.actionClass} ${this.options.actionSecondaryClass}">
+					<a href="${this.options.linkUrl}" class="${this.options.linkClass}">${this.options.linkLabel}</a>
+				</div>
+			`;
+		}
 		bannerElement.innerHTML = `
 			<div class="${this.options.outerClass}">
 				<div class="${this.options.innerClass}" data-o-banner-inner="">
@@ -127,9 +135,7 @@ class Banner {
 						<div class="${this.options.actionClass}">
 							<a href="${this.options.buttonUrl}" class="${this.options.buttonClass}">${this.options.buttonLabel}</a>
 						</div>
-						<div class="${this.options.actionClass} ${this.options.actionSecondaryClass}">
-							<a href="${this.options.linkUrl}" class="${this.options.linkClass}">${this.options.linkLabel}</a>
-						</div>
+						${secondaryActionHtml}
 					</div>
 				</div>
 			</div>

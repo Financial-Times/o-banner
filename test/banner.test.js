@@ -80,7 +80,7 @@ describe('Banner', () => {
 				contentShort: null,
 				buttonLabel: 'OK',
 				buttonUrl: '#',
-				linkLabel: 'More info',
+				linkLabel: null,
 				linkUrl: '#',
 				closeButtonLabel: 'Close',
 				theme: null
@@ -399,6 +399,37 @@ describe('Banner', () => {
 										</div>
 										<div class="mockActionClass mockActionSecondaryClass">
 											<a href="mockLinkUrl" class="mockLinkClass">mockLinkLabel</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					`.replace(/[\t\n]+/g, ''));
+				});
+
+			});
+
+			describe('when `options.linkLabel` is not a string', () => {
+
+				beforeEach(() => {
+					banner.options.linkLabel = null;
+					returnValue = banner.buildBannerElement();
+				});
+
+				it('does not include a secondary action/link', () => {
+					assert.strictEqual(returnValue.outerHTML.replace(/[\t\n]+/g, ''), `
+						<div class="mockBannerClass" data-o-component="o-banner">
+							<div class="mockOuterClass">
+								<div class="mockInnerClass" data-o-banner-inner="">
+									<div class="mockContentClass mockContentLongClass">
+										mockContentLong
+									</div>
+									<div class="mockContentClass mockContentShortClass">
+										mockContentShort
+									</div>
+									<div class="mockActionsClass">
+										<div class="mockActionClass">
+											<a href="mockButtonUrl" class="mockButtonClass">mockButtonLabel</a>
 										</div>
 									</div>
 								</div>
