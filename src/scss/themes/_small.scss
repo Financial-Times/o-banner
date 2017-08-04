@@ -1,4 +1,12 @@
 
+@mixin oBannerThemeSmallBase {
+	bottom: $_o-banner-spacing / 2;
+
+	@include oGridRespondTo($until: S) {
+		bottom: 0;
+	}
+}
+
 @mixin oBannerThemeSmallOuter {
 	width: auto;
 	max-width: map-get($o-grid-layouts, XL);
@@ -47,6 +55,8 @@
 
 @mixin oBannerThemeSmall($class: 'o-banner') {
 	.#{$class}--small {
+		@include oBannerThemeSmallBase;
+
 		.#{$class}__outer {
 			@include oBannerThemeSmallOuter;
 		}

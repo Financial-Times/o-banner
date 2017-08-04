@@ -52,7 +52,7 @@
 
 @mixin oBannerHeading {
 	@include oTypographySans($scale: (default: 3));
-	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
 }
 
 @mixin oBannerActions {
