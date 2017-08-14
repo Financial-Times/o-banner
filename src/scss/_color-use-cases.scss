@@ -6,10 +6,10 @@
 @include oColorsSetUseCase(o-banner-link, text, 'white');
 @include oColorsSetUseCase(o-banner-close, text, 'white');
 
-@include oColorsSetUseCase(o-banner-bright, background, 'teal-90');
-@include oColorsSetUseCase(o-banner-bright, text, 'oxford-40');
-@include oColorsSetUseCase(o-banner-bright-button, background, 'teal-90');
-@include oColorsSetUseCase(o-banner-bright-button, text, 'oxford-40');
-@include oColorsSetUseCase(o-banner-bright-button-active, text, 'white');
-@include oColorsSetUseCase(o-banner-bright-link, text, 'oxford-40');
-@include oColorsSetUseCase(o-banner-bright-close, text, 'oxford-40');
+@include oColorsSetUseCase(o-banner-promo, background, 'teal-90');
+@include oColorsSetUseCase(o-banner-promo, text, 'oxford-40');
+@include oColorsSetUseCase(o-banner-promo-button, background, 'teal-90');
+@include oColorsSetUseCase(o-banner-promo-button, text, 'oxford-40');
+@include oColorsSetUseCase(o-banner-promo-button-active, text, 'white');
+@include oColorsSetUseCase(o-banner-promo-link, text, 'oxford-40');
+@include oColorsSetUseCase(o-banner-promo-close, text, 'oxford-40');
