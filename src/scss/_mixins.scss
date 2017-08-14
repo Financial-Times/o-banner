@@ -1,8 +1,8 @@
 
 @mixin _oBannerGetThemeMixin($theme, $class) {
-	@if $theme == 'small' {
-		@include oBannerThemeSmall($class);
-	} @else if $theme == 'promo' {
+	@if $theme == 'promo' {
 		@include oBannerThemePromo($class);
+	} @else if $theme == 'promo-standout' {
+		@include oBannerThemePromoStandout($class);
 	}
 }

@@ -13,3 +13,11 @@
 @include oColorsSetUseCase(o-banner-promo-button-active, text, 'white');
 @include oColorsSetUseCase(o-banner-promo-link, text, 'oxford');
 @include oColorsSetUseCase(o-banner-promo-close, text, 'oxford');
+
+@include oColorsSetUseCase(o-banner-promo-standout, background, 'oxford-80');
+@include oColorsSetUseCase(o-banner-promo-standout, text, 'white');
+@include oColorsSetUseCase(o-banner-promo-standout-button, background, 'oxford-80');
+@include oColorsSetUseCase(o-banner-promo-standout-button, text, 'white');
+@include oColorsSetUseCase(o-banner-promo-standout-button-active, text, 'white');
+@include oColorsSetUseCase(o-banner-promo-standout-link, text, 'white');
+@include oColorsSetUseCase(o-banner-promo-standout-close, text, 'white');

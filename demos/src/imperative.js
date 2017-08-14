@@ -28,7 +28,7 @@ function initDemos() {
 			});
 		});
 
-		document.getElementById('banner-small').addEventListener('click', () => {
+		document.getElementById('banner-promo').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: `
 					<h1 class="o-banner__heading">Come back and save</h1>
@@ -37,11 +37,11 @@ function initDemos() {
 				`,
 				buttonLabel: 'Subscribe now',
 				buttonUrl: '#subscribe-button',
-				theme: 'small'
+				theme: 'promo'
 			});
 		});
 
-		document.getElementById('banner-small-html').addEventListener('click', () => {
+		document.getElementById('banner-promo-html').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: `
 					<h1 class="o-banner__heading">Come back and save</h1>
@@ -54,11 +54,11 @@ function initDemos() {
 				`,
 				buttonLabel: 'Subscribe now',
 				buttonUrl: '#subscribe-button',
-				theme: 'small'
+				theme: 'promo'
 			});
 		});
 
-		document.getElementById('banner-small-action').addEventListener('click', () => {
+		document.getElementById('banner-promo-action').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: 'Try the new compact homepage. A list view of today\'s homepage with fewer images.',
 				contentShort: 'Try the new compact homepage.',
@@ -66,11 +66,11 @@ function initDemos() {
 				buttonUrl: '#try-button',
 				linkLabel: 'Give feedback',
 				linkUrl: '#feedback-link',
-				theme: 'small'
+				theme: 'promo'
 			});
 		});
 
-		document.getElementById('banner-small-promo').addEventListener('click', () => {
+		document.getElementById('banner-promo-standout').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: `
 					<h1 class="o-banner__heading">Come back and save</h1>
@@ -79,11 +79,11 @@ function initDemos() {
 				`,
 				buttonLabel: 'Subscribe now',
 				buttonUrl: '#subscribe-button',
-				theme: ['small', 'promo']
+				theme: ['promo', 'promo-standout']
 			});
 		});
 
-		document.getElementById('banner-small-promo-html').addEventListener('click', () => {
+		document.getElementById('banner-promo-standout-html').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: `
 					<h1 class="o-banner__heading">Come back and save</h1>
@@ -96,11 +96,11 @@ function initDemos() {
 				`,
 				buttonLabel: 'Subscribe now',
 				buttonUrl: '#subscribe-button',
-				theme: ['small', 'promo']
+				theme: ['promo', 'promo-standout']
 			});
 		});
 
-		document.getElementById('banner-small-promo-action').addEventListener('click', () => {
+		document.getElementById('banner-promo-standout-action').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: 'Try the new compact homepage. A list view of today\'s homepage with fewer images.',
 				contentShort: 'Try the new compact homepage.',
@@ -108,7 +108,7 @@ function initDemos() {
 				buttonUrl: '#try-button',
 				linkLabel: 'Give feedback',
 				linkUrl: '#feedback-link',
-				theme: ['small', 'promo']
+				theme: ['promo', 'promo-standout']
 			});
 		});
 
