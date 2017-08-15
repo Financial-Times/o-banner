@@ -31,9 +31,7 @@ function initDemos() {
 		document.getElementById('banner-promo').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: `
-					<h1 class="o-banner__heading">Come back and save</h1>
-					<p>Re-subscribe today and save 25%</p>
-					<small>Pay just £3 per week</small>
+					<p><b>Save 25% on a Standard subscription</b> When you come back to the FT today</p>
 				`,
 				buttonLabel: 'Subscribe now',
 				buttonUrl: '#subscribe-button',
@@ -44,8 +42,7 @@ function initDemos() {
 		document.getElementById('banner-promo-html').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: `
-					<h1 class="o-banner__heading">Come back and save</h1>
-					<p>Re-subscribe today and save 25%</p>
+					<p><b>Save 25% on a Standard subscription</b> When you come back to the FT today</p>
 					<ul>
 						<li>This</li>
 						<li>is a</li>
@@ -73,9 +70,7 @@ function initDemos() {
 		document.getElementById('banner-promo-standout').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: `
-					<h1 class="o-banner__heading">Come back and save</h1>
-					<p>Re-subscribe today and save 25%</p>
-					<small>Pay just £3 per week</small>
+					<p><b>Save 25% on a Standard subscription</b> When you come back to the FT today</p>
 				`,
 				buttonLabel: 'Subscribe now',
 				buttonUrl: '#subscribe-button',
@@ -86,8 +81,7 @@ function initDemos() {
 		document.getElementById('banner-promo-standout-html').addEventListener('click', () => {
 			new Banner(null, {
 				contentLong: `
-					<h1 class="o-banner__heading">Come back and save</h1>
-					<p>Re-subscribe today and save 25%</p>
+					<p><b>Save 25% on a Standard subscription</b> When you come back to the FT today</p>
 					<ul>
 						<li>This</li>
 						<li>is a</li>

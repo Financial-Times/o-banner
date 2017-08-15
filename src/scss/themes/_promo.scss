@@ -17,7 +17,7 @@
 
 @mixin oBannerThemePromoInner {
 	@include oColorsFor(o-banner-promo, background);
-	@include oTypographySans($scale: (default: 1, M: 3));
+	@include oTypographySans($scale: (default: 2, M: 3));
 	display: block;
 	margin: 0 $_o-banner-spacing / 2;
 	padding: $_o-banner-spacing;
@@ -42,7 +42,7 @@
 
 @mixin oBannerThemePromoActions {
 	display: block;
-	margin-top: $_o-banner-spacing / 2;
+	margin-top: oTypographySpacingSize(6);
 }
 
 @mixin oBannerThemePromoAction {

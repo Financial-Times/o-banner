@@ -16,7 +16,7 @@
 }
 
 @mixin oBannerInner {
-	@include oTypographySans($scale: (default: 1));
+	@include oTypographySans($scale: (default: 2));
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -36,13 +36,18 @@
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-
-	small {
-		display: block;
-		@include oTypographySans($scale: (default: 1));
+	b,
+	strong {
+		@include oTypographyBold($font: 'sans');
 	}
-	> small:last-child {
-		margin-top: $_o-banner-spacing / 2;
+	ul {
+		@include oTypographyListUnordered
+		@include oTypographySans($scale: (default: 2));
+		margin-top: oTypographySpacingSize(2);
+
+		li:before {
+			color: inherit;
+		}
 	}
 }
 
