@@ -36,10 +36,6 @@
 	padding: 0;
 }
 
-@mixin oBannerThemePromoHeading {
-	@include oTypographySans($scale: (default: 3, M: 4));
-}
-
 @mixin oBannerThemePromoActions {
 	display: block;
 	margin-top: oTypographySpacingSize(6);
@@ -84,9 +80,6 @@
 		}
 		.#{$class}__content {
 			@include oBannerThemePromoContent;
-		}
-		.#{$class}__heading {
-			@include oBannerThemePromoHeading;
 		}
 		.#{$class}__actions {
 			@include oBannerThemePromoActions;
