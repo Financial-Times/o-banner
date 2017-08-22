@@ -89,6 +89,12 @@
 	@include oButtons($size: big);
 	@include oButtonsCustomTheme(oColorsGetUseCase(o-banner-button, background), oColorsGetUseCase(o-banner-button, text), primary);
 	white-space: nowrap;
+	// This is a hack around the fact that custom buttons do not
+	// support buttons with three colours. TODO: add this to o-buttons
+	&,
+	&:not([disabled]):active {
+		@include oColorsFor(o-banner-button-active, text);
+	}
 }
 
 @mixin oBannerLink {
