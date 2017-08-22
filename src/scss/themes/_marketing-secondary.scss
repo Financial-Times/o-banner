@@ -23,7 +23,12 @@
 }
 
 @mixin oBannerThemeMarketingSecondaryLink {
-	@include oColorsFor(o-banner-marketing-secondary-link, text);
+	@include oTypographyLinkCustom(
+		$baseColor: oColorsGetUseCase(o-banner-marketing-secondary-link, text),
+		$hoverColor: oColorsGetUseCase(o-banner-marketing-secondary-link, text),
+		$outlineColor: oColorsGetUseCase(o-banner-marketing-secondary-link, text),
+		$backgroundColor: oColorsGetUseCase(o-banner-marketing-secondary, background)
+	);
 }
 
 @mixin oBannerThemeMarketingSecondaryCloseButton {

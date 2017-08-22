@@ -98,7 +98,12 @@
 }
 
 @mixin oBannerLink {
-	@include oColorsFor(o-banner-link, text);
+	@include oTypographyLinkCustom(
+		$baseColor: oColorsGetUseCase(o-banner-link, text),
+		$hoverColor: oColorsGetUseCase(o-banner-link, text),
+		$outlineColor: oColorsGetUseCase(o-banner-link, text),
+		$backgroundColor: 'teal'
+	);
 	@include oTypographySans($scale: (default: 0));
 	white-space: nowrap;
 }
