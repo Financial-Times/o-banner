@@ -42,15 +42,11 @@
 	}
 	ul {
 		@include oTypographyListUnordered;
-		@include oTypographySans($scale: (default: 2));
+		@include oTypographySans($scale: (default: 1));
 		margin-top: oTypographySpacingSize(2);
 
 		li:before {
 			color: inherit;
-		}
-
-		@include oGridRespondTo($until: M) {
-			@include oTypographySans($scale: (default: 1));
 		}
 	}
 }
