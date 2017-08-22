@@ -91,6 +91,7 @@
 	white-space: nowrap;
 	// This is a hack around the fact that custom buttons do not
 	// support buttons with three colours. TODO: add this to o-buttons
+	// https://github.com/Financial-Times/o-buttons/issues/128
 	&,
 	&:not([disabled]):active {
 		@include oColorsFor(o-banner-button-active, text);
