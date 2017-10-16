@@ -50,6 +50,30 @@
 	}
 }
 
+@mixin oBannerThemeSmallHeading {
+	@include oTypographySans($scale: 5);
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@include oTypographySans($scale: 5);
+		@include oTypographyBold($font: 'sans');
+	}
+	@include oGridRespondTo($until: S) {
+		&,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			@include oTypographySans($scale: 3);
+		}
+	}
+}
+
 @mixin oBannerThemeSmallActions {
 	display: block;
 	margin-top: oTypographySpacingSize(6);
@@ -76,6 +100,9 @@
 		}
 		.#{$class}__content {
 			@include oBannerThemeSmallContent;
+		}
+		.#{$class}__heading {
+			@include oBannerThemeSmallHeading;
 		}
 		.#{$class}__actions {
 			@include oBannerThemeSmallActions;

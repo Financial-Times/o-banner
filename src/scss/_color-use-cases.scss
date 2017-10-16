@@ -6,6 +6,7 @@
 @include oColorsSetUseCase(o-banner-button, text, 'white');
 @include oColorsSetUseCase(o-banner-link, text, 'white');
 @include oColorsSetUseCase(o-banner-close, text, 'white');
+@include oColorsSetUseCase(o-banner-heading-rule, background, 'white');
 
 @include oColorsSetUseCase(o-banner-marketing-secondary, background, 'white');
 @include oColorsSetUseCase(o-banner-marketing-secondary, text, 'black');
@@ -14,6 +15,7 @@
 @include oColorsSetUseCase(o-banner-marketing-secondary-button-active, text, 'white');
 @include oColorsSetUseCase(o-banner-marketing-secondary-link, text, 'black');
 @include oColorsSetUseCase(o-banner-marketing-secondary-close, text, 'black');
+@include oColorsSetUseCase(o-banner-marketing-secondary-heading-rule, background, 'teal-90');
 
 @include oColorsSetUseCase(o-banner-marketing-primary, background, 'teal-90');
 @include oColorsSetUseCase(o-banner-marketing-primary, text, 'black');
@@ -22,3 +24,4 @@
 @include oColorsSetUseCase(o-banner-marketing-primary-button-active, text, 'white');
 @include oColorsSetUseCase(o-banner-marketing-primary-link, text, 'black');
 @include oColorsSetUseCase(o-banner-marketing-primary-close, text, 'black');
+@include oColorsSetUseCase(o-banner-marketing-primary-heading-rule, background, 'black');
