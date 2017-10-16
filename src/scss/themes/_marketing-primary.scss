@@ -14,6 +14,13 @@
 
 @mixin oBannerThemeMarketingPrimaryButton {
 	@include oButtonsCustomTheme(oColorsGetUseCase(o-banner-marketing-primary-button, background), oColorsGetUseCase(o-banner-marketing-primary-button, text), primary);
+	// This is a hack around the fact that custom buttons do not
+	// support buttons with three colours. TODO: add this to o-buttons
+	// https://github.com/Financial-Times/o-buttons/issues/128
+	&,
+	&:not([disabled]):active {
+		@include oColorsFor(o-banner-marketing-primary-button-active, text);
+	}
 }
 
 @mixin oBannerThemeMarketingPrimaryLink {
