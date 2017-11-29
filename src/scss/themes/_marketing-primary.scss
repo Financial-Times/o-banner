@@ -1,3 +1,5 @@
+// @deprecated This theme has been deprecated, and will be removed in the
+// next major version of o-banner
 
 @mixin oBannerThemeMarketingPrimaryOuter {
 	@include oColorsFor(o-banner-marketing-primary, text background);
@@ -43,7 +45,7 @@
 }
 
 @mixin oBannerThemeMarketingPrimary($class: 'o-banner') {
-	@warn "The marketing-primary theme has been deprecated and will be removed in the next major release";
+	@warn "The marketing-primary theme has been deprecated and will be removed in the next major release. Please use the marketing theme instead";
 	.#{$class}--marketing-primary {
 		.#{$class}__outer {
 			@include oBannerThemeMarketingPrimaryOuter;

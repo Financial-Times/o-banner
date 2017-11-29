@@ -30,7 +30,7 @@
 }
 
 @mixin oBannerThemeMarketingSecondary($class: 'o-banner') {
-	@warn "The marketing-secondary theme has been deprecated and will be removed in the next major release";
+	@warn "The marketing-secondary theme has been deprecated and will be removed in the next major release. Please use the marketing theme instead";
 	.#{$class}--marketing-secondary {
 		.#{$class}__outer {
 			@include oBannerThemeMarketingSecondaryOuter;
