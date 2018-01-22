@@ -26,7 +26,7 @@
 
 
 	@include oGridRespondTo($until: XL) {
-		right: calc(#{100% - oGridColspan(6)}});
+		right: calc(#{100% - oGridColspan(6)});
 		left: oGridGutter(M);
 	}
 
