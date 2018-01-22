@@ -18,3 +18,13 @@ body {
 .o-banner--static {
 	position: static !important; // sass-lint:disable-line no-important
 }
+
+.container {
+	height: 100vh;
+}
+
+.linkage {
+	position: relative;
+	top: 85%;
+	left: 55%;
+}
