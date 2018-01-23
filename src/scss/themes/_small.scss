@@ -2,8 +2,6 @@
 @mixin oBannerThemeSmallBase {
 	width: 100%;
 	margin: 0;
-	left: 0;
-	bottom: 0;
 
 	@include oGridRespondTo(S) {
 		width: oGridColspan(8);
