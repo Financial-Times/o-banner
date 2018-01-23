@@ -1,29 +1,26 @@
 
 @mixin oBannerThemeSmallBase {
-	left: calc((100vw - #{map-get($o-grid-layouts, XL)}) / 2); // ((viewport - grid width) / 2)
-	width: map-get($o-grid-layouts, XL) / 2; // width is 50% grid
-	margin: $_o-banner-spacing / 2;
+	width: 100%;
+	margin: 0;
+	left: 0;
+	bottom: 0;
 
-	@include oGridRespondTo($until: XL) {
-		width: oGridColspan(6);
-		left: 0;
-	}
-
-	@include oGridRespondTo($until: L) {
-		width: oGridColspan(7);
-		left: 0;
-	}
-
-	@include oGridRespondTo($until: M) {
+	@include oGridRespondTo(S) {
 		width: oGridColspan(8);
-		left: 0;
+		margin: $_o-banner-spacing / 2;
 	}
 
-	@include oGridRespondTo($until: S) {
-		width: 100%;
-		margin: 0;
-		left: 0;
-		bottom: 0;
+	@include oGridRespondTo(M) {
+		width: oGridColspan(7);
+	}
+
+	@include oGridRespondTo(L) {
+		width: oGridColspan(6);
+	}
+
+	@include oGridRespondTo(XL) {
+		width: map-get($o-grid-layouts, XL) / 2; // width is 50% grid
+		left: calc((100vw - #{map-get($o-grid-layouts, XL)}) / 2); // ((viewport - grid width) / 2)
 	}
 }
 
