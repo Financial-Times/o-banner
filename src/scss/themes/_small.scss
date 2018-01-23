@@ -2,9 +2,7 @@
 @mixin oBannerThemeSmallBase {
 	left: calc((100vw - #{map-get($o-grid-layouts, XL)}) / 2); // ((viewport - grid width) / 2)
 	width: map-get($o-grid-layouts, XL) / 2; // width is 50% grid
-	display: inline-block;
 	margin: $_o-banner-spacing / 2;
-	margin-top: 0;
 
 	@include oGridRespondTo($until: XL) {
 		width: oGridColspan(6);
@@ -30,9 +28,6 @@
 }
 
 @mixin oBannerThemeSmallOuter {
-	width: auto;
-	max-width: map-get($o-grid-layouts, XL);
-	margin: 0 auto;
 	background-color: transparent;
 	box-shadow: none;
 }
