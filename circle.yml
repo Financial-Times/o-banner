@@ -1,15 +1,35 @@
-machine:
-  node:
-    version: 6
-  post:
-    - npm install -g origami-build-tools@^7
-dependencies:
-  override:
-    - obt install
-  cache_directories:
-    - "node_modules"
-test:
-  override:
-    - obt demo --demo-filter pa11y
-    - obt verify
-    - obt test
+version: 2
+jobs:
+  test:
+    working_directory: ~/component
+    docker:
+      - image: circleci/node:8-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "bower.json" }}
+      - run:
+          name: Install Origami Build Tools
+          command: npm install origami-build-tools@^7
+      - run:
+          name: Install dependencies
+          command: ./node_modules/.bin/obt install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "bower.json" }}
+          paths:
+            - node_modules
+            - bower_components
+      - run:
+          name: Build accessibility testing demo
+          command: ./node_modules/.bin/obt demo --demo-filter pa11y --suppress-errors
+      - run:
+          name: Run linters
+          command: ./node_modules/.bin/obt verify
+      - run:
+          name: Run tests
+          command: ./node_modules/.bin/obt test
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
