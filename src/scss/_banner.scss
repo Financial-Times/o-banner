@@ -149,9 +149,9 @@
 	@include oButtons(
 		$size: big,
 		$theme: (
-			$background: oColorsGetUseCase(o-banner-button, background),
-			$accent: oColorsGetUseCase(o-banner-button, text),
-			$colorizer: 'primary'
+			'background': oColorsGetUseCase(o-banner-button, background),
+			'accent': oColorsGetUseCase(o-banner-button, text),
+			'colorizer': 'primary'
 	));
 	white-space: nowrap;
 	// This is a hack around the fact that custom buttons do not

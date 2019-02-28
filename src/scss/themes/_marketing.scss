@@ -31,9 +31,9 @@
 
 @mixin oBannerThemeMarketingButton {
 	@include oButtonsTheme($theme: (
-		$background: oColorsGetUseCase(o-banner-marketing-button, background),
-		$accent: oColorsGetUseCase(o-banner-marketing-button, text),
-		$colorizer: 'primary'
+		'background': oColorsGetUseCase(o-banner-marketing-button, background),
+		'accent': oColorsGetUseCase(o-banner-marketing-button, text),
+		'colorizer': 'primary'
 	));
 
 	// This is a hack around the fact that custom buttons do not
