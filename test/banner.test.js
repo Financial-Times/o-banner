@@ -1,9 +1,9 @@
 /* eslint-env mocha, sinon, proclaim */
 
-import Banner from './../src/js/banner';
-import * as assert from 'proclaim';
-import sinon from 'sinon/pkg/sinon';
-import mainFixture from './fixture/main';
+const Banner = require('./../src/js/banner');
+const assert = require('proclaim');
+const sinon = require('sinon/pkg/sinon');
+const mainFixture = require('./fixture/main');
 
 sinon.assert.expose(assert, {
 	includeFail: false,
