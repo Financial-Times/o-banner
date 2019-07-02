@@ -33,7 +33,7 @@
 	@include oTypographySans($scale: 2);
 	display: block;
 	padding: $_o-banner-spacing;
-	padding-top: oSpacingByName('s6');
+	padding-top: oSpacingByIncrement(7);
 	max-width: none;
 }
 
