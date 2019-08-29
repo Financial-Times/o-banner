@@ -46,10 +46,13 @@ class Banner {
 
 		}, options || Banner.getOptionsFromDom(bannerElement));
 
+		// Find the element to append the banner to if configured.
 		try {
+			// Find by query selector.
 			if (typeof this.options.appendTo === 'string') {
 				this.options.appendTo = document.querySelector(this.options.appendTo);
 			}
+			// Confirm a html element has been given or found.
 			if ((this.options.appendTo instanceof HTMLElement) !== true) {
 				throw new Error('It is not an Node instance.');
 			}
