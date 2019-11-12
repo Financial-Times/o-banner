@@ -1,5 +1,3 @@
-/* eslint-env mocha, sinon, proclaim */
-
 import Banner from './../src/js/banner';
 import * as assert from 'proclaim';
 import sinon from 'sinon/pkg/sinon';
@@ -547,7 +545,7 @@ describe('Banner', () => {
 
 			describe('when `options.theme` is defined and is an array', () => {
 				it('errors', () => {
-					proclaim.throws(() => {
+					assert.throws(() => {
 						banner = new Banner(null, {
 							theme: ['marketing', 'product']
 						});
@@ -557,7 +555,7 @@ describe('Banner', () => {
 
 			describe('when `options.theme` is an invalid theme', () => {
 				it('errors', () => {
-					proclaim.throws(() => {
+					assert.throws(() => {
 						banner = new Banner(null, {
 							theme: 'not-a-real-theme'
 						});
@@ -601,7 +599,7 @@ describe('Banner', () => {
 
 			describe('when `options.layout` is an invalid layout', () => {
 				it('errors', () => {
-					proclaim.throws(() => {
+					assert.throws(() => {
 						banner = new Banner(null, {
 							layout: 'not-a-real-layout'
 						});

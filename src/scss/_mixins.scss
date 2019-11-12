@@ -195,7 +195,7 @@
 }
 
 @mixin _oBannerCloseButton {
-	@include oIconsContent('cross',_oBannerGet('text'), $size: $_o-banner-close-button-size);
+	@include oIconsContent('cross', _oBannerGet('text'), $size: $_o-banner-close-button-size);
 	// start: undo button styles
 	appearance: none;
 	color: inherit;

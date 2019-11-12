@@ -35,7 +35,7 @@
 			));
 	}
 	.o-banner__close {
-		@include oIconsContent('cross',_oBannerGet('text', $from: $theme), $size: $_o-banner-close-button-size);
+		@include oIconsContent('cross', _oBannerGet('text', $from: $theme), $size: $_o-banner-close-button-size);
 	}
 
 	// When combined with the "small" and "compact" themes
