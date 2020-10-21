@@ -1,6 +1,6 @@
 {
     "main": "main.js",
-    "name": "o-banner",
+    "name": "@financial-times/o-banner",
     "devDependencies": {
         "eslint": "^7.8.1",
         "eslint-config-origami-component": "^2.1.0",
