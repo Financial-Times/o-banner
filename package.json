@@ -12,17 +12,17 @@
         "stylelint-config-origami-component": "^1.0.4"
     },
     "peerDependencies": {
-        "@financial-times/o-buttons": "^100.0.0-5",
-        "@financial-times/o-colors": "^100.0.0-5",
-        "@financial-times/o-grid": "^100.0.0-5",
-        "@financial-times/o-icons": "^100.0.0-5",
-        "@financial-times/o-spacing": "^100.0.0-5",
-        "@financial-times/o-typography": "^100.0.0-5",
-        "@financial-times/o-visual-effects": "^100.0.0-5"
+        "@financial-times/o-buttons": "^100.0.0-6",
+        "@financial-times/o-colors": "^100.0.0-6",
+        "@financial-times/o-grid": "^100.0.0-6",
+        "@financial-times/o-icons": "^100.0.0-6",
+        "@financial-times/o-spacing": "^100.0.0-6",
+        "@financial-times/o-typography": "^100.0.0-6",
+        "@financial-times/o-visual-effects": "^100.0.0-6"
     },
     "description": "Provides styling for product messaging which could include feature promotion, education, feedback, and legal information.",
     "publishConfig": {
         "registry": "http://localhost:4873"
     },
-    "version": "100.0.0-5"
+    "version": "100.0.0-6"
 }
