@@ -1,6 +1,8 @@
 {
-    "browser": "main.js",
     "name": "@financial-times/o-banner",
+    "version": "100.0.0-7",
+    "description": "Provides styling for product messaging which could include feature promotion, education, feedback, and legal information.",
+    "browser": "main.js",
     "devDependencies": {
         "eslint": "^7.8.1",
         "eslint-config-origami-component": "^2.1.0",
@@ -20,9 +22,7 @@
         "@financial-times/o-typography": "^100.0.0-7",
         "@financial-times/o-visual-effects": "^100.0.0-7"
     },
-    "description": "Provides styling for product messaging which could include feature promotion, education, feedback, and legal information.",
     "publishConfig": {
         "registry": "http://localhost:4873"
-    },
-    "version": "100.0.0-7"
+    }
 }
