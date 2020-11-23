@@ -239,8 +239,8 @@ class Banner {
 		}
 		return Object.keys(bannerElement.dataset).reduce((options, key) => {
 
-			// Ignore data-o-component
-			if (key === 'oComponent') {
+			// Ignore keys which are not in the component's namespace
+			if (!key.match(/^oBanner(\w)(\w+)$/)) {
 				return options;
 			}
 
