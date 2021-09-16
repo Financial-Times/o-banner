@@ -1,5 +1,11 @@
 # o-banner
 
+***
+
+**This component has moved to the [Origami Component System](https://github.com/Financial-Times/origami).**
+
+***
+
 o-banner is a component used for product messaging which could include feature promotion, education, feedback, and legal information.
 
 - [Usage](#usage)
